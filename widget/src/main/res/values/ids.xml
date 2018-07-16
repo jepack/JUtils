@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="jepack_snack_bar_msg" />
+    <item type="id" name="jepack_snack_bar_action" />
+    <item type="id" name="j_swipe_tip" />
+</resources>

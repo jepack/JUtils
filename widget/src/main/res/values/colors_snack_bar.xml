@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="snack_bar_info">#008def</color>
+    <color name="snack_bar_confirm">#40978f</color>
+    <color name="snack_bar_warning">#f19503</color>
+    <color name="snack_bar_alert">#dc4f24</color>
+</resources>

@@ -1,15 +1,14 @@
-package com.btkanba.player.play.widget
+package com.jepack.lib.widget
 
 import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.view.View
 import android.widget.TextView
-import com.btkanba.player.common.UtilBase
-import com.btkanba.player.play.R
+import com.jepack.lib.utils.UtilBase
 
 /**
- * TODO Add class comments here.
- * Created by zhanghaihai on 2018/7/10.
+ * 使用此类重用JSnackBar
+ * Created by jepack@163.com on 2018/7/10.
  */
 class JSnackBarUtil {
     companion object {

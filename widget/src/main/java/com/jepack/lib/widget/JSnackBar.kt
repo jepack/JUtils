@@ -1,18 +1,17 @@
-package com.btkanba.player.play.widget
+package com.jepack.lib.widget
 
 import android.graphics.Color
 import android.support.design.internal.SnackbarContentLayout
 import android.support.design.widget.Snackbar
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.btkanba.player.common.LogUtil
-import com.btkanba.player.play.R
 
 /**
- * TODO Add class comments here.
+ * 可视化定制布局
  * Created by zhanghaihai on 2018/7/1.
  */
 class JSnackBar{
@@ -52,7 +51,7 @@ class JSnackBar{
             parent.removeViewAt(index)
             parent.addView(newContentView, index)
         }catch (e:Exception){
-            LogUtil.e("Failed to change snackbar layout! ", e.message)
+            Log.e(Constants.TAG, "Failed to change snackbar layout! ")
         }
         return snackbar
     }
