@@ -15,12 +15,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.common.internal.ShowFirstParty
-import com.jepack.skeleton.SkeletonUtil
-import com.wmkankan.audio.R
-import com.wmkankan.audio.settings.SettingsFragment
-import com.wmkankan.audio.widget.dialog.*
+import com.jepack.jutils.R
+import com.jepack.lib.widget.dialog.*
 import io.reactivex.functions.Consumer
-import javax.inject.Inject
 
 /**
  * Fragment 基础类，提供基本功能

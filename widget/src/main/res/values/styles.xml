@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 无边距DialogFragment-->
+    <style name="DF_NO_PADDING_TRANSPARENT" parent="android:Theme.Dialog" >
+        <!-- Fill the screen -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowIsFloating">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+</resources>

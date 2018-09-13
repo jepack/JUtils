@@ -1,12 +1,11 @@
-package com.wmkankan.audio.base
+package com.jepack.jutils.base
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.jepack.jutils.R
+import com.jepack.lib.widget.SlidingLayout
 import com.umeng.analytics.MobclickAgent
-
-import com.wmkankan.audio.R
-import com.wmkankan.audio.widget.SlidingLayout
 
 /**
  * TODO Add class comments here.

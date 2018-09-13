@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="ActionDialogBinding">
+        <variable
+            name="action"
+            type="com.jepack.lib.widget.dialog.ActionModel" />
+    </data>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/dialog_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/loading"
+        android:src="@drawable/shape_loading_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dialog_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/loading"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@id/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_error_page"/>
+
+    <TextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_bg"
+        app:layout_constraintTop_toTopOf="@id/dialog_bg"
+        app:layout_constraintEnd_toEndOf="@id/dialog_bg"
+        app:layout_constraintStart_toStartOf="@+id/dialog_bg"
+        android:paddingStart="@dimen/action_dialog_tip_padding_h"
+        android:paddingEnd="@dimen/action_dialog_tip_padding_h"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:text="@{action.msg}"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/action_dialog_msg"
+        tools:text="提示内容"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/dialog_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/dialog_bg"
+        app:layout_constraintStart_toStartOf="@id/dialog_bg"
+        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@id/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_bg"
+        android:paddingStart="@dimen/action_dialog_padding_h"
+        android:paddingEnd="@dimen/action_dialog_padding_h"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/dialog_txt_margin"
+        android:textColor="@android:color/white"
+        android:text="@{action.tip}"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        tools:text="提示信息"
+        android:textSize="@dimen/action_dialog_tip"
+        />
+
+    <Button
+        android:id="@+id/dialog_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_bg"
+        app:layout_constraintEnd_toEndOf="@id/dialog_bg"
+        app:layout_constraintStart_toStartOf="@id/dialog_bg"
+        android:background="@drawable/ripple_action_btn_bg"
+        android:text="@{action.btnMsg}"
+        tools:text="重试"
+        android:textColor="@color/bt_accent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.5"/>
+</android.support.constraint.ConstraintLayout>
+
+</layout>

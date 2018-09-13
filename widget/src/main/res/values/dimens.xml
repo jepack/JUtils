@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="snack_bar_msg_padding">5dp</dimen>
+
+    <dimen name="action_dialog_padding_h">30dp</dimen>
+    <dimen name="action_dialog_tip_padding_h">40dp</dimen>
+    <dimen name="action_dialog_tip">16sp</dimen>
+    <dimen name="action_dialog_msg">14sp</dimen>
+    <dimen name="dialog_txt_margin">5dp</dimen>
+    <color name="bt_accent">#00ddff</color>
+    <dimen name="dialog_loading_msg_padding">5dp</dimen>
 </resources>

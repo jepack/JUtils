@@ -11,4 +11,13 @@
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="palette_direction">方向：</string>
+    <string name="palette_ltr">左至右</string>
+    <string name="palette_rtl">右至左</string>
+    <string name="palette_ttb">上至下</string>
+    <string name="palette_btt">下至上</string>
+    <string name="palette_type_rec">矩形</string>
+    <string name="palette_type_circle">圆形</string>
+    <string name="palette_type_tip">裁剪类型：</string>
+    <string name="palette_type_wave">波浪</string>
 </resources>

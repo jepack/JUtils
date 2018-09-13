@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="LoadDialogBinding">
+        <variable
+            name="loading"
+            type="com.jepack.lib.widget.dialog.LoadingModel" />
+    </data>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/dialog_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/loading"
+        android:src="@drawable/shape_loading_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dialog_loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_progress_white"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dialog_icon"
+        app:layout_constraintVertical_bias="0.37"/>
+
+    <TextView
+        android:id="@+id/dialog_loading_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/dialog_icon"
+        app:layout_constraintStart_toStartOf="@id/dialog_icon"
+        app:layout_constraintTop_toBottomOf="@id/dialog_loading_progress"
+        android:layout_marginTop="@dimen/dialog_txt_margin"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/dialog_loading_msg_padding"
+        android:paddingEnd="@dimen/dialog_loading_msg_padding"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+        android:text="@{loading.msg}"
+        tools:text="正在登录..."
+        />
+</android.support.constraint.ConstraintLayout>
+
+</layout>
